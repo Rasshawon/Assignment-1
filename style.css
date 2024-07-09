@@ -69,3 +69,8 @@ button {
 .web-dev-box {
     display: flex;
 }
+
+.grid-three-cols {
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+}
