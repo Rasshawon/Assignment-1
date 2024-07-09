@@ -20,7 +20,7 @@ h1 {
     font-weight: 900;
 }
 
-h2 {
+nav h2 {
     font-weight: 500;
     font-size: 20px;
     border: 1px solid #9297a3;
@@ -56,4 +56,16 @@ button {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+}
+
+.why-section {
+    padding: 8rem 12rem;
+}
+
+.why-heading {
+    text-align: center;
+}
+
+.web-dev-box {
+    display: flex;
 }
