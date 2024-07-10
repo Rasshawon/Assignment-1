@@ -10,7 +10,7 @@
 
 p {
     font-size: 14px;
-    color: rgb(90, 90, 90);
+    color: rgba(13, 19, 33, 1);
     margin-bottom: 30px;
     line-height: 1.5;
     line-break: auto;
@@ -94,6 +94,10 @@ main img {
     display: flex;
 }
 
+.web-dev-box h2 {
+    color: rgba(13, 19, 33, 0.7);
+}
+
 .heading {
     text-align: center;
 }
@@ -103,7 +107,7 @@ main img {
 }
 
 .heading p {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .why-section,
@@ -144,7 +148,8 @@ main img {
 .learn-more {
     font-size: 15px;
     background-color: white;
-    color: #282727db;
+    color: rgba(13, 19, 33, 1);
+    padding: 5px 10px;
     border: 2px solid rgb(130, 120, 120);
     border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -235,7 +240,7 @@ main img {
     margin: 0 auto;
     padding: 40px 150px 15px 150px;
     text-align: center;
-    background: url(./assets/handshake.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./assets/handshake.jpg);
     width: 1050px;
     height: 300px;
     background-position: center -160px;
@@ -249,16 +254,277 @@ main img {
 
 }
 
-footer {
+.need-support h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px black;
+}
 
+.need-support p {
+    color: white;
+    font-size: 16px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.input .text {
+    width: 548px;
+    height: 57px;
+    background-color: white;
+    padding-left: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.input .submit {
+    width: 120px;
+    height: 57px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.input .text::placeholder {
+    font-size: 16px;
+}
+
+footer {
     background-color: rgba(13, 19, 33, 0.03);
-    justify-content: space-around;
+
     height: 100px;
 }
 
-footer .footer-box {
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
+footer h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-box {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+
+
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        padding: 20px 50px;
+    }
+
+    .why-section,
+    .inspiration,
+    .current-page,
+    .next-terget {
+        padding: 20px 50px 15px 50px;
+    }
+
+    .box-shadow {
+        padding: 24px;
+        gap: 80px;
+    }
+
+    .grid-three--cols {
+        grid-template-columns: 1fr;
+    }
+
+    .need-support {
+        width: 90%;
+        height: auto;
+    }
+
+    .need-support h4 {
+        font-size: 18px;
+    }
+
+    .need-support p {
+        font-size: 12px;
+    }
+
+    .need-support input .text::placeholder {
+        font-size: 10px;
+
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 480px) {
+    nav {
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    nav h1,
+    nav h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    nav h2 {
+        padding: 5px 10px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    .hero-heading {
+        font-size: 20px;
+    }
+
+    .why-section,
+    .inspiration,
+    .current-page,
+    .next-terget {
+        padding: 10px 20px 15px 20px;
+    }
+
+    .box-shadow {
+        padding: 12px;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .vedio-container {
+        justify-content: center;
+        padding: 10px 10px;
+    }
+
+    .vedio {
+        height: 200px;
+    }
+
+    .grid-three--cols {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-box {
+        padding: 20px 10px;
+    }
+
+    .next-box {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .next-img {
+        padding: 10px 0 0 0;
+    }
+
+    .need-support {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .input .text {
+        width: 160px;
+        height: 50px;
+
+        &::placeholder {
+            font-size: 10px;
+            text-wrap: wrap;
+            padding: 3px 5px;
+        }
+    }
+
+    .need-support {
+        margin: 0 auto;
+        padding: 40px 150px 15px 15px;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./assets/handshake.jpg);
+        width: 100%;
+        height: auto;
+        background-position: center -16px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+
+    }
+
+    .need-support h4 {
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 5px black;
+    }
+
+    .need-support p {
+        color: white;
+        font-size: 8px;
+    }
+
+    .input input {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .input .submit {
+        width: 80px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 5px 20px 5px 20px;
+    }
+
+    footer h5 {
+        font-size: 10px;
+        font-weight: 400;
+        text-wrap: wrap;
+    }
+
+    .footer-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 40px;
+        gap: 20px;
+
+
+    }
+
+    .social-icons a img {
+        width: 80%;
+        height: auto;
+    }
 }
