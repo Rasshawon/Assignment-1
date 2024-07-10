@@ -239,6 +239,7 @@ main img {
 .need-support {
     margin: 0 auto;
     padding: 40px 150px 15px 150px;
+    margin-top: 50px;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./assets/handshake.jpg);
     width: 1050px;
@@ -305,8 +306,8 @@ main img {
 
 footer {
     background-color: rgba(13, 19, 33, 0.03);
-
     height: 100px;
+    margin-top: 50px;
 }
 
 footer h5 {
